@@ -32,9 +32,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "https://telegram.org/js/telegram-web-app.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -97,10 +95,15 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "https://telegram.org/js/telegram-web-app.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
