@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 declare global {
   interface Window {
@@ -11,9 +11,15 @@ declare global {
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+
   title = 'telegram-bot-web';
-    tg = window.Telegram?.WebApp;
+  tg = window.Telegram?.WebApp;
+
+  ngOnInit(): void {
+    this.tg.ready();
+  }
+
 
   onClose(){
     this.tg.close();
