@@ -17,11 +17,11 @@ export class AppComponent implements OnInit {
   tg = window.Telegram?.WebApp;
 
   ngOnInit(): void {
-    this.tg.ready();
+    this.tg?.ready();
   }
 
 
   onClose(){
-    this.tg.close();
+    this.tg?.close();
   }
 }
