@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tg-bot-button',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./tg-bot-button.component.scss']
 })
 export class TgBotButtonComponent {
-  
+  @Input() textBtn: string = '';
+  constructor(){
+
+  }
 }
