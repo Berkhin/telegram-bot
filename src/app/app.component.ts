@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare global {
-  interface Window {
-    Telegram: any;
-  }
-}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,10 +14,5 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.tg?.ready();
-  }
-
-
-  onClose(){
-    this.tg?.close();
   }
 }
