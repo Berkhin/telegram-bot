@@ -12,7 +12,9 @@ declare global {
   styleUrls: ['./tg-bot-header.component.scss']
 })
 export class TgBotHeaderComponent {
+
   tg = window.Telegram?.WebApp;
+  
   onClose(){
     this.tg?.close();
   }
